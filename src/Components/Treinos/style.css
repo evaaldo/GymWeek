@@ -1,3 +1,39 @@
 .treinos__titulo {
     padding: 2em 0 0 2em;
 }
+
+.treinos {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.treinos-container {
+    color: var(--preto);
+    background-color: var(--branco);
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2em 0 2em 4em;
+    border: 4px solid var(--preto);
+}
+
+.treinos-container__imagem {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: .5em;
+    border: 2px solid var(--preto);
+}
+
+.treinos-container__data {
+    margin-top: 1em;
+}
+
+.treinos-container__lista {
+    list-style: none;
+    margin-top: .5em;
+}

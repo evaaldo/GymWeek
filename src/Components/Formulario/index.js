@@ -1,4 +1,4 @@
-import Botao from './Botao'
+import BotaoFormulario from './BotaoFormulario'
 import './style.css'
 
 export default function Formulario() {
@@ -73,7 +73,7 @@ export default function Formulario() {
                 </div>
             </div>
             <p className='formulario__dica'>Dica: Segue a dica de que o recomendado é colocar entre quatro e cinco exercícios</p>
-            <Botao />
+            <BotaoFormulario />
         </form>
     )
 }

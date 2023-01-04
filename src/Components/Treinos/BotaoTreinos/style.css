@@ -1,0 +1,17 @@
+.botao__remover {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: .5em 1em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: .5em;
+    font-weight: 700;
+    transition: .2s;
+    cursor: pointer;
+    border: none;
+    opacity: .8;
+}
+
+.botao__remover:hover {
+    opacity: 1;
+}

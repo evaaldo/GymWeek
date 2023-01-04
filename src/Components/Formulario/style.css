@@ -27,4 +27,33 @@ label {
 input {
     padding: .5em 1em;
     border-radius: 10px;
+    border: none;
+    background-color: var(--branco);
+}
+
+input::placeholder {
+    color: var(--preto);
+    opacity: .5;
+}
+
+.formulario-exercicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-exercicios {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.formulario-exercicios__titulo {
+    margin-top: 1em;
+}
+
+.formulario__dica {
+    font-size: .8em;
+    margin-top: 2em;
 }

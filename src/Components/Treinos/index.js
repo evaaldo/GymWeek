@@ -1,4 +1,3 @@
-import Botao from '../Formulario/BotaoFormulario'
 import BotaoTreinos from './BotaoTreinos'
 import './style.css'
 import Peito from './Treino-de-peito.jpeg'

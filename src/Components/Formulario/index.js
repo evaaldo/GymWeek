@@ -1,9 +1,18 @@
-import BotaoFormulario from './BotaoFormulario'
+import { useState } from 'react'
 import './style.css'
 
 export default function Formulario() {
+
+    const [treino, setTreino] = useState()
+    const [dia, setDia] = useState()
+    const [primeiro, setPrimeiro] = useState()
+    const [segundo, setSegundo] = useState()
+    const [terceiro, setTerceiro] = useState()
+    const [quarto, setQuarto] = useState()
+    const [quinto, setQuinto] = useState()
+
     return(
-        <form className='formulario'>
+        <form className='formulario' onSubmit={console.log(treino)}>
             <div className='formulario-treino-dia'>
                 <div className='formulario-treino'>
                     <label for='treino'>Treino</label>
@@ -12,6 +21,7 @@ export default function Formulario() {
                         type='text'
                         id='treino'
                         placeholder='Peito...'
+                        onChange={(e) => setTreino(e.target.value)}
                     />
                 </div>
                 <div className='formulario-dia'>
@@ -21,6 +31,7 @@ export default function Formulario() {
                         type='text'
                         id='dia'
                         placeholder='Segunda-feira...'
+                        onChange={(e) => setDia(e.target.value)}
                     />
                 </div>
             </div>
@@ -33,6 +44,7 @@ export default function Formulario() {
                         type='text'
                         id='exercicio1'
                         placeholder='Supino reto...'
+                        onChange={(e) => setPrimeiro(e.target.value)}
                     />
                 </div>
                 <div className='formulario-exercicio'>
@@ -42,6 +54,7 @@ export default function Formulario() {
                         type='text'
                         id='exercicio2'
                         placeholder='Supino inclinado...'
+                        onChange={(e) => setSegundo(e.target.value)}
                     />
                 </div>
                 <div className='formulario-exercicio'>
@@ -51,6 +64,7 @@ export default function Formulario() {
                         type='text'
                         id='exercicio3'
                         placeholder='Peck deck...'
+                        onChange={(e) => setTerceiro(e.target.value)}
                     />
                 </div>
                 <div className='formulario-exercicio'>
@@ -60,6 +74,7 @@ export default function Formulario() {
                         type='text'
                         id='exercicio4'
                         placeholder='Crossover...'
+                        onChange={(e) => setQuarto(e.target.value)}
                     />
                 </div>
                 <div className='formulario-exercicio'>
@@ -69,11 +84,12 @@ export default function Formulario() {
                         type='text'
                         id='exercicio5'
                         placeholder='Pullover...'
+                        onChange={(e) => setQuinto(e.target.value)}
                     />
                 </div>
             </div>
             <p className='formulario__dica'>Dica: Segue a dica de que o recomendado é colocar entre quatro e cinco exercícios</p>
-            <BotaoFormulario />
+            <button type='submit' className='botao__formulario'>Adicionar</button>
         </form>
     )
 }

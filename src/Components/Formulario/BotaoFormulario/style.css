@@ -6,8 +6,8 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--branco);
-    color: var(--preto);
+    background-color: var(--botao-adicionar);
+    color: var(--branco);
     width: 20%;
     transition: all .2s;
 }

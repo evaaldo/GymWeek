@@ -1,6 +1,5 @@
 import Cabecalho from '../Components/Cabecalho';
 import Formulario from '../Components/Formulario';
-import Treinos from '../Components/Treinos';
 import '../Style/GlobalStyle.css'
 
 function PaginaInicial() {
@@ -8,7 +7,6 @@ function PaginaInicial() {
     <>
       <Cabecalho />
       <Formulario />
-      <Treinos/>
     </>
   );
 }
